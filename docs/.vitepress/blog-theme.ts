@@ -16,6 +16,8 @@ const blogTheme = getThemeConfig({
   // 文章默认作者
   author: '慕易安',
 
+  recommend: false,
+
   // 友链
   friend: [
     {

@@ -4,6 +4,7 @@ layout: home
 blog:
  name: '慕易安'
  motto: 科学的前端切图仔
+ logo: 'https://avatars.githubusercontent.com/u/44827414?s=400&u=a926e3e9e5f77f818170491d8880959f6e570d70&v=4'
  inspiring:
   - 千万不要因为走得太久，而忘记了我们为什么出发
   - 人生就像一场修行，你不可能一开始就修成正果

@@ -1,12 +1,35 @@
 import { defineConfig } from 'vitepress'
+import Components from 'unplugin-vue-components/vite'
+import { MuTableResolver } from '@muyianking/table'
+import AutoImport from 'unplugin-auto-import/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // 导入主题的配置
 import { blogTheme } from './blog-theme'
 
 export default defineConfig({
+  vite: {
+    plugins: [
+      AutoImport({
+        imports: ['vue'],
+        eslintrc: {
+          enabled: true,
+        },
+      }),
+      Components({
+        directoryAsNamespace: true,
+        resolvers: [
+          ElementPlusResolver({
+            importStyle: 'sass',
+          }),
+          MuTableResolver()
+        ]
+      })
+    ],
+  },
+
   // 继承博客主题(@sugarat/theme)
   extends: blogTheme,
-  // base,
   lang: 'zh-cn',
   title: '慕易安',
   description: '慕易安的博客、文档',
@@ -26,10 +49,17 @@ export default defineConfig({
     lastUpdatedText: '上次更新于',
 
     // 设置logo
-    logo: '/logo.png',
+    logo: 'https://avatars.githubusercontent.com/u/44827414?s=400&u=a926e3e9e5f77f818170491d8880959f6e570d70&v=4',
     nav: [
       { text: '首页', link: '/' },
       { text: '关于作者', link: 'https://github.com/MuyianKing' }
-    ]
+    ],
+    sidebar: {
+      // '/docs/table': [
+      //   { text: '轮播1', link: '/docs/table/home' },
+      //   { text: '轮播2', link: '/docs/table/home' },
+      //   { text: '轮播3', link: '/docs/table/home' },
+      // ],
+    }
   }
 })
