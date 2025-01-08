@@ -8,5 +8,6 @@ tag:
 ---
 
 ## mu-table
-
-<demo-table/>
+<client-only>
+    <demo-table/>
+</client-only>

@@ -35,7 +35,7 @@ export default defineConfig({
   description: '慕易安的博客、文档',
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', href: 'https://avatars.githubusercontent.com/u/44827414?s=400&u=a926e3e9e5f77f818170491d8880959f6e570d70&v=4' }]
   ],
   themeConfig: {
     // 展示 2,3 级标题在目录中
