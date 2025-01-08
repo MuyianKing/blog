@@ -31,6 +31,7 @@ export default defineConfig({
   // 继承博客主题(@sugarat/theme)
   extends: blogTheme,
   lang: 'zh-cn',
+  base: '/blog/',
   title: '慕易安',
   description: '慕易安的博客、文档',
   lastUpdated: true,
