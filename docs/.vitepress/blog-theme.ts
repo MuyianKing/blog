@@ -7,7 +7,19 @@ const blogTheme = getThemeConfig({
 
   // 页脚
   footer: {
-    copyright: 'MIT License | 粥里有勺糖',
+    version: false,
+    copyright: {
+      message:"",
+      icon:false
+    },
+    // icpRecord: {
+    //   name: '蜀ICP备19011724号',
+    //   link: 'https://beian.miit.gov.cn/'
+    // },
+    // securityRecord: {
+    //   name: '公网安备xxxxx',
+    //   link: 'https://www.beian.gov.cn/portal/index.do'
+    // },
   },
 
   // 主题色修改
