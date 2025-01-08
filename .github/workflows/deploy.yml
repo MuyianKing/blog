@@ -11,7 +11,7 @@ env:
 # 权限设置
 permissions:
   # 允许读取仓库内容的权限。
-  contents: read
+  contents: write
   # 允许写入 GitHub Pages 的权限。
   pages: write
   # 允许写入 id-token 的权限。
