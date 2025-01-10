@@ -9,6 +9,9 @@ import { blogTheme } from './blog-theme'
 
 export default defineConfig({
   vite: {
+    ssr: {
+      noExternal: true,
+    },
     plugins: [
       AutoImport({
         imports: ['vue'],
