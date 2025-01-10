@@ -27,7 +27,6 @@ export default defineConfig({
       })
     ],
   },
-
   // 继承博客主题(@sugarat/theme)
   extends: blogTheme,
   lang: 'zh-cn',
@@ -41,14 +40,14 @@ export default defineConfig({
   themeConfig: {
     // 展示 2,3 级标题在目录中
     outline: {
-      level: [2, 3],
+      level: [ 2, 4],
       label: '目录'
     },
     // 默认文案修改
     returnToTopLabel: '回到顶部',
     sidebarMenuLabel: '相关文章',
     lastUpdatedText: '上次更新于',
-
+    darkModeSwitchLabel:"主题",
     // 设置logo
     logo: 'https://avatars.githubusercontent.com/u/44827414?s=400&u=a926e3e9e5f77f818170491d8880959f6e570d70&v=4',
     nav: [

@@ -7,6 +7,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    ElSwitch: typeof import('element-plus/es')['ElSwitch']
     MuTable: typeof import('@muyianking/table/index.js')['MuTable']
     MuTableColumn: typeof import('@muyianking/table/index.js')['MuTableColumn']
   }

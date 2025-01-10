@@ -1,6 +1,7 @@
 import BlogTheme from '@sugarat/theme'
 import CodePreview from "../../../components/code-preview/Index.vue"
 import TableDemo from "../../../components/table"
+import "./user-theme.css"
 
 export default {
   ...BlogTheme,
@@ -9,6 +10,5 @@ export default {
     app
       .component("CodePreview", CodePreview)
       .use(TableDemo)
-
   },
 }

@@ -19,7 +19,7 @@ defineProps({
 
 <template>
   <code-preview :code>
-    <mu-table :data="tableData" v-bind="$attrs">
+    <mu-table :data="tableData" v-bind="$attrs" class="vp-raw">
       <mu-table-column prop="date" label="Date" />
       <mu-table-column prop="name" label="Name" />
       <mu-table-column prop="address" label="Address" />
