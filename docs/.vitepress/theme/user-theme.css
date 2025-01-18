@@ -9,9 +9,12 @@
     background-color:   #7f7f7f
   }
 
+  .purple{
+    background-color: #ff9a0b;
+  }
+
   .purple .mu-table-cell,
   .green .mu-table-cell{
     color: #000;
   }
-
 }
