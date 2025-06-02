@@ -44,18 +44,11 @@
     }
   },
   "pnpm": {
-    "overrides": {
-      "vite": "npm:rolldown-vite@latest"
-    },
     "peerDependencyRules": {
       "ignoreMissing": [
         "@algolia/client-search",
         "search-insights"
       ]
-    },
-    "ignoredBuiltDependencies": [
-      "unrs-resolver",
-      "vue-demi"
-    ]
+    }
   }
 }
