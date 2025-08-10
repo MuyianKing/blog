@@ -43,26 +43,25 @@ export default defineConfig({
   themeConfig: {
     // 展示 2,3 级标题在目录中
     outline: {
-      level: [ 2, 4],
+      level: [2, 4],
       label: '目录'
     },
     // 默认文案修改
     returnToTopLabel: '回到顶部',
     sidebarMenuLabel: '相关文章',
     lastUpdatedText: '上次更新于',
-    darkModeSwitchLabel:"主题",
+    darkModeSwitchLabel: "主题",
     // 设置logo
     logo: 'https://avatars.githubusercontent.com/u/44827414?s=400&u=a926e3e9e5f77f818170491d8880959f6e570d70&v=4',
     nav: [
       { text: '首页', link: '/' },
+      { text: '笔记', link: '/study/home' },
       { text: '关于作者', link: 'https://github.com/MuyianKing' }
     ],
     sidebar: {
-      // '/docs/table': [
-      //   { text: '轮播1', link: '/docs/table/home' },
-      //   { text: '轮播2', link: '/docs/table/home' },
-      //   { text: '轮播3', link: '/docs/table/home' },
-      // ],
+      '/study': [
+        // { text: '测试', link: '/study/test' },
+      ],
     }
   }
 })
