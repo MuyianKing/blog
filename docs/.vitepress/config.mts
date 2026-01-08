@@ -29,6 +29,13 @@ export default defineConfig({
         ]
       })
     ],
+    css:{
+      preprocessorOptions:{
+        scss:{
+          api:"modern-compiler"
+        }
+      }
+    }
   },
   // 继承博客主题(@sugarat/theme)
   extends: blogTheme,
